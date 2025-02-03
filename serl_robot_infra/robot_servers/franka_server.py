@@ -27,8 +27,8 @@ flags.DEFINE_string(
     "gripper_type", "Robotiq", "Type of gripper to use: Robotiq, Franka, or None"
 )
 flags.DEFINE_list(
-    "reset_joint_target",
-    [0, 0, 0, -1.9, -0, 2, 0],
+    "reset_joint_target", # [0, 0, 0, -1.9, -0, 2, 0]
+    [-0.153189, 0.00243977, -0.00012704, -2.57954421, -0.00005558, 2.58072664, 0.63228682],
     "Target joint angles for the robot to reset to",
 )
 flags.DEFINE_string("flask_url", 
